@@ -23,7 +23,7 @@ spec:
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
-        namespace: 'appset-git-dir-{{path.basename}}'
+        namespace: 'appset-git-{{path.basename}}'
       syncPolicy:
         syncOptions:
           - CreateNamespace=true
